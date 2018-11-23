@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,21 +8,151 @@
     <title>Document</title>
 </head>
 <style>
-    body{
+    body {
         background: #353030
     }
-    .main-container{
-        background: #353030;
-        width: 85%;
-        height: 875px;
-        border: 5px red solid;
+
+    .main_container {
+        display: grid;
+        grid-template-areas:
+            '. . m m m m m m m m m m'
+            'f f f f f f f f f f f f '
+        ;
+    }
+
+    .inner-container {
+        grid-area: m;
+
+        /* border: 5px red solid; */
         margin-left: 100px;
         margin-right: 100px;
+
+        display: grid;
+        grid-template-areas:
+            '. mypic . hMENU . . . . . . . .'
+            '. mgm . burger burger burger burger burger . . . .'
+
+        ;
+    }
+
+    .my_pic {
+        grid-area: mypic;
+        width: 117px;
+        height: 117px;
+        justify-self: center;
+        padding: 30px;
+    }
+
+    .home_menu_img {
+        grid-area: burger;
+        width: 1127px;
+        height: 561px;
+    }
+    .home_menu_img:hover{
+        background-color: rgba(90, 85, 85, 0.555)
+    }
+    
+.home_menu_img:active {
+  /* background-color: #3e8e41; */
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  animation-name: example;
+  animation-duration: 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;  
+
+
+}
+
+@keyframes example {
+    from { 
+        transform: rotate(0deg);
+        width: 1127px;
+        height: 561px;
+    }
+
+    to {
+        transform: rotate(-90deg);
+        width: 0px;
+        height: 0px;
+    }
+}
+
+    .mgm_name {
+        grid-area: mgm;
+        width: 48px;
+        height: 670px;
+        justify-self: center;
+
+    }
+
+    .home_MENU {
+        grid-area: hMENU;
+        width: 400px;
+        height: 177px;
+        margin-left: 64px;
+    }
+
+    .home_footer {
+        grid-area: f;
+
+        display: grid;
+        grid-template-areas: 
+        '. . ul . .'
+        '. . copy . .';
+    }
+
+    .footer_menu_ul {
+        grid-area: ul;
+
+        font-size: 20px;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: flex;
+        justify-content: center
+    }
+
+    .footer_menu_ul>li {
+        float: left;
+    }
+
+    .footer_menu_ul>li>a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .copyrights {
+        grid-area: copy;
+        text-align: center;
+        color: white;
     }
 </style>
+
 <body>
-    <div class="main-container">
-        hi
+    <div class="main_container">
+        <div class="inner-container">
+            <img class="my_pic" src="home_pic.png" alt="my pic">
+            <img class="mgm_name" src="mariomazza.png" alt="">
+            <img class="home_MENU" src="home_MENU.png" alt="">
+            <img class="home_menu_img" src="home_big_menu.png" alt="menu">
+        </div>
+
+        <footer class='home_footer'>
+                <ul class='footer_menu_ul'>
+                    <li><a>Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                
+             <div class='copyrights'>&copy; 2017 - 2018 All rights reserved, Designed by MGM Studios</div>
+        </footer>
     </div>
 </body>
+
 </html>

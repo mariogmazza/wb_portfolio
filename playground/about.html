@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>about</title>
+</head>
+<style>
+    body {
+        background: #353030
+    }
+
+    .main_container_about {
+        display: grid;
+        grid-template-areas:
+            '. . m m m m m m m m m m'
+            'f f f f f f f f f f f f '
+        ;
+    }
+
+    .inner_about_container {
+        grid-area: m;
+
+        display: grid;
+        grid-template-areas:
+            '. mypic . hABOUT . . . . . . . portf'
+            '. . sq sq sq sq sq sq . . . portf'
+
+        ;
+    }
+
+    .mgm_pic {
+        grid-area: mypic;
+        width: 137px;
+        height: 137px;
+        margin-top: 22px
+    }
+
+
+    .about_title {
+        grid-area: hABOUT;
+        width: 454px;
+        height: 177px;
+    }
+
+    .portfolio_btn {
+        grid-area: portf;
+        width: 92px;
+        height: 645px;
+        padding-top: 25px;
+    }
+
+    .square_mid {
+        grid-area: sq;
+        width: 1070px;
+        height: 454px;
+        background-color: #353030;
+        /* border: #707070 solid 1px; */
+        margin-top: -54px;
+    }
+
+    .square_mid,p{
+        color: white;
+        font-size: 30px;
+
+        
+    }
+
+
+
+    .about_footer {
+        grid-area: f;
+
+        display: grid;
+        grid-template-areas:
+            '. . ul . .'
+            '. . copy . .';
+    }
+
+    .footer_menu_ul {
+        grid-area: ul;
+
+        font-size: 20px;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: flex;
+        justify-content: center
+    }
+
+
+    .footer_menu_ul>li>a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    .copyrights {
+        grid-area: copy;
+        text-align: center;
+        color: white;
+    }
+</style>
+
+<body>
+    <div class="main_container_about">
+
+        <div class="inner_about_container">
+            <img class="about_title" src="ABOUT.png" alt="">
+            <img class="mgm_pic" src="mario_pic_clear.png" alt="">
+            <img class="portfolio_btn" src="portfolio_btn.png" alt="">
+            <div class='square_mid'>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt enim deserunt reiciendis incidunt
+                    esse commodi placeat distinctio accusamus! Delectus error velit aut quam laudantium quo quasi
+                    excepturi deserunt placeat totam!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, facere. Natus nobis aliquid veniam
+                    praesentium maiores inventore totam eveniet repudiandae iste asperiores sunt, nostrum optio eaque
+                    possimus hic esse quae?</p>
+            </div>
+        </div>
+
+        <footer class='about_footer'>
+            <ul class='footer_menu_ul'>
+                <li><a>Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <div class='copyrights'>&copy; 2017 - 2018 All rights reserved, Designed by MGM Studios</div>
+
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
