@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+
+    <title>New Portfolio</title>
+</head>
+<style>
+    .main_layout {
+        height: 100%;
+        display: grid;
+        grid-template-areas:
+            "side con con con con con"
+            "side con con con con con"
+        ;
+        font-family: 'Cabin', sans-serif;
+
+
+        background: black;
+        border: 6px solid #4E7DFB;
+    }
+
+    .navbar {
+        grid-area: nav;
+        align-self: center;
+        justify-self: center
+    }
+
+    .link_img {
+        width: 12vw;
+        height: 12vh;
+        padding: 15px;
+    }
+
+
+
+
+    .mario_logo {
+        height: 40px;
+        padding: 10px;
+    }
+
+    .mario_logo2 {
+        display: none;
+        grid-area: logo;
+    }
+
+
+    .side_menu {
+        grid-area: side;
+
+        background-image: url("./black-software-background.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        text-align: center;
+        display: grid;
+        margin: 10px;
+    }
+
+    .content {
+        grid-area: con;
+
+        display: grid;
+        grid-template-areas:
+            "t . . . . ."
+            "c1 c1 c1 c2 c2 c2"
+        ;
+        color: white;
+
+    }
+
+    .title {
+        grid-area: t;
+        padding-bottom: 40px;
+    }
+
+    .title>div {
+        color: #c2c2c2;
+    }
+
+
+    .colm1 {
+        grid-area: c1;
+    }
+
+
+
+
+
+
+    .secs {
+        font-size: 2vw;
+        border-bottom: 2px solid rgb(85, 85, 85);
+        padding-bottom: 4px;
+    }
+
+
+    .colm2 {
+        grid-area: c2;
+    }
+
+    .background {
+        width: 80%;
+        height: minmax(200px, 50vh);
+    }
+
+    .goals {
+        width: 80%;
+        height: minmax(200px, 50vh);
+    }
+
+    .motivation {
+        width: 80%;
+        height: minmax(200px, 50vh);
+    }
+
+    .frustrations {
+        width: 80%;
+        height: minmax(200px, 50vh);
+    }
+
+    .projects {
+        width: 80%;
+        height: minmax(200px, 50vh);
+    }
+
+    .skills {
+        width: 80%;
+        height: minmax(200px, 50vh);
+    }
+
+
+
+
+
+
+
+
+
+
+
+    * {
+        box-sizing: border-box;
+
+    }
+
+    .column {
+        float: left;
+        width: 25%;
+        padding: 0 10px;
+        font-size: 1vw;
+    }
+
+    /* Remove extra left and right margins, due to padding */
+    .row {
+        margin: 0 -5px;
+        padding: 10px;
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+
+
+    /* Style the counter cards */
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        padding: 16px;
+        text-align: center;
+        background-color: #f1f1f148;
+    }
+
+
+
+    @media screen and (max-width: 900px) {
+        .card{
+            margin: 10px;
+        }
+        .column{
+            width: 50%;
+        }
+    }
+
+    @media screen and (max-width: 650px) {
+        .column {
+            width: 50%;
+            display: block;
+            margin-bottom: 20px;
+        }
+
+        .main_layout {
+
+            grid-template-areas:
+                /* "nav nav nav nav nav nav" */
+                "con con con con con con"
+                "side side side side side side"
+                /* "side con con con" */
+            ;
+        }
+
+
+        .content {
+            grid-area: con;
+
+            display: grid;
+            grid-template-areas:
+                "logo . t t . ."
+                "c1 c1 c1 c1 c1 c1"
+                "c2 c2 c2 c2 c2 c2"
+
+            ;
+            color: white;
+
+        }
+
+        .side_menu{
+            display: block;
+        }
+        
+        .link_img{
+            padding: 5px;
+        }
+        .mario_logo2 {
+            display: block;
+            height: 51px;
+            padding: 10px;
+        }
+
+        .mario_logo{
+            display: none;
+        }
+
+        .secs {
+            font-size: 6vw;
+            padding: 10px;
+        }
+
+        .skills-text {
+            font-size: 5vw;
+        }
+
+
+
+
+
+
+
+
+        .background {
+            width: 100%;
+        }
+
+        .goals {
+            width: 100%;
+        }
+
+        .motivation {
+            width: 100%;
+        }
+
+        .frustrations {
+            width: 100%;
+        }
+
+        .projects {
+            width: 100%;
+        }
+
+        .skills {
+            width: 100%;
+        }
+
+
+
+
+    }
+</style>
+
+<body>
+
+    <div class="main_layout">
+
+        <!-- <div class="navbar">
+            <img class="mario_logo" src="./mgm_logo.svg" alt="">
+        </div> -->
+
+        <div class="side_menu">
+            <img class="mario_logo" src="./mgm_logo.svg" alt="">
+
+
+            <img class="link_img" src="./github-logo.svg" alt="">
+            <img class="link_img" src="./linkedin-button.svg" alt="">
+            <img class="link_img" src="./at.svg" alt="">
+        </div>
+
+        <div class="content">
+            <img class="mario_logo2" src="./mgm_logo.svg" alt="">
+            <div class="title">
+                <h1>Mario</h1>
+                <div class="job_title">Full-Stack Developer</div>
+            </div>
+
+            <div class="colm1">
+
+                <div class="background">
+                    <div class="secs">BACKGROUND</div>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam dolores obcaecati alias iste
+                        amet
+                        ipsa quod dolorem ratione reprehenderit? Facilis incidunt minus voluptas aliquid distinctio
+                        accusamus voluptatibus, beatae maxime porro!</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident quas repellendus, sit vero
+                        fugiat rerum similique qui recusandae nisi doloribus! Dignissimos quasi esse dolor provident
+                        vitae in inventore eveniet velit!</p>
+                </div>
+                <div class="goals">
+                    <div class="secs">GOALS</div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo praesentium neque earum. Ipsam,
+                        nam
+                        alias consequuntur praesentium mollitia ullam animi aliquid, autem dolorum nemo iusto assumenda
+                        aliquam voluptates ut accusantium.</p>
+                </div>
+                <div class="motivation">
+                    <div class="secs">MOTIVATION</div>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod aut illo nihil expedita
+                        reprehenderit
+                        in impedit sit maxime tempora velit perferendis alias ipsam eveniet, sunt repellendus a. Quasi,
+                        quidem voluptates?</p>
+                </div>
+
+            </div>
+
+
+            <div class="colm2">
+
+                <div class="frustrations">
+                    <div class="secs">FRUSTRATIONS</div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque autem maiores inventore
+                        laboriosam
+                        veniam cumque asperiores fugit rem labore, reprehenderit nulla iusto facere minima tenetur
+                        dolorem
+                        pariatur aperiam aliquam doloremque!</p>
+                </div>
+
+
+                <div id="pepe" class="projects">
+                    <div class="secs">PROJECTS</div>
+
+                    <div class="row">
+                        <div class="column">
+                            <div class="card">
+                                <h3>Card 1</h3>
+                                <p>Some text</p>
+                                <p>Some text</p>
+                            </div>
+                        </div>
+
+                        <div class="column">
+                            <div class="card">
+                                <h3>Card 2</h3>
+                                <p>Some text</p>
+                                <p>Some text</p>
+                            </div>
+                        </div>
+
+                        <div class="column">
+                            <div class="card">
+                                <h3>Card 3</h3>
+                                <p>Some text</p>
+                                <p>Some text</p>
+                            </div>
+                        </div>
+
+                        <div class="column">
+                            <div class="card">
+                                <h3>Card 4</h3>
+                                <p>Some text</p>
+                                <p>Some text</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="skills">
+
+                    <div class=secs>SKILS</div>
+
+                    <div class="row">
+                        <div class="column">
+                            <div class="card">
+                                <div class="skills-text">JavaScript</div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="card">
+                                <div class="skills-text">HTML5</div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="card">
+                                <div class="skills-text">CSS3</div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="card">
+                                <div class="skills-text">React.js</div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="row">
+                        <div class="column">
+                            <div class="card">
+                                <div class="skills-text">Git</div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <div class="card">
+                                <div class="skills-text">Node.js</div>
+                            </div>
+                        </div>
+
+                        <div class="column">
+                            <div class="card">
+                                <div class="skills-text">MongoDB</div>
+                            </div>
+                        </div>
+
+                        <div class="column">
+                            <div class="card">
+                                <div class="skills-text">Express.js</div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+    </div>
+
+</body>
+
+</html>
