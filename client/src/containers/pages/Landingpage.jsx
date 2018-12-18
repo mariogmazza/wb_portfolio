@@ -24,14 +24,14 @@ class Landingpage extends Component {
             <a
               href="https://github.com/mariogmazza"
               target="_blank"
-              rel="noopener"
+              rel="noopener noreferrer"
             >
               <img className="link_img" src={github} alt="github link" />
             </a>
 
             <a
               href="https://www.linkedin.com/in/mario-mazza/"
-              rel="noopener"
+              rel="noopener noreferrer"
               target="_blank"
             >
               {" "}
@@ -41,8 +41,11 @@ class Landingpage extends Component {
                 alt="linkedin link"
               />{" "}
             </a>
-            <a href="mailto:mariomazza01@gmail.com?Subject=Hello%20again" target="_top">
-            <img className="link_img" src={emailLogo} alt="email img" />
+            <a
+              href="mailto:mariomazza01@gmail.com?Subject=Hello%20again"
+              target="_top"
+            >
+              <img className="link_img" src={emailLogo} alt="email img" />
             </a>
           </div>
 
@@ -57,36 +60,52 @@ class Landingpage extends Component {
               <div className="background">
                 <div className="secs">BACKGROUND</div>
                 <p>
-                  Lorem ipsum dolor, sit aconsectetur adipisicing elit. Aperiam
-                  dolores obcaecati alias iste amet ipsa quod dolorem ratione
-                  reprehenderit? Facilis incidunt minus voluptas aliquid
-                  distinctio accusamus voluptatibus, beatae maxime porro!
+                  My journey as a developer started when as teen playing an
+                  online game (Quake Arena :) I discovered I could mod my
+                  characters attire and appearance then and there I was hooked.
+                  I realized what a few lines of code could do. Later I got my
+                  CompTIA A+ and CISCO CCENT certifications and so I began to
+                  work as a independent computer technician for a few years.
                 </p>
                 <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Provident quas repellendus, sit vero fugiat rerum similique
-                  qui recusandae nisi doloribus! Dignissimos quasi esse dolor
-                  provident vitae in inventore eveniet velit!
+                  While working as a computer tech and taking Computer
+                  Engineering courses in college I discovered FreeCodeCamp an
+                  online coding resource that changed my life it awoke my love
+                  for web development and from that moment on I never looked
+                  back. I soon completed my Front-End certification and few
+                  months later I took the scariest and most exciting step in my
+                  career and quit my stable and well paid job to boost my
+                  chances to finally work on that which I love that is software
+                  and took an immersive full-time Coding Bootcamp and I
+                  graduated as a FULL-STACK DEVELOPER. I learned many
+                  technologies but most important of all I learned how to learn
+                  on my own.
                 </p>
               </div>
 
               <div className="goals">
                 <div className="secs">GOALS</div>
                 <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo
-                  praesentium neque earum. Ipsam, nam alias consequuntur
-                  praesentium mollitia ullam animi aliquid, autem dolorum nemo
-                  iusto assumenda aliquam voluptates ut accusantium.
+                  My most recent goal is to finish reading the whole series of
+                  books called “You don’t know JS”. I would love to also finish
+                  a course on AI that I have already started. Also last but not
+                  least is to find a company that is willing to take a chance in
+                  someone that wholeheartedly loves the craft of software
+                  development, understands his weaknesses and strives every day
+                  to be a better developer.
                 </p>
               </div>
 
               <div className="motivation">
                 <div className="secs">MOTIVATION</div>
                 <p>
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod
-                  aut illo nihil expedita reprehenderit in impedit sit maxime
-                  tempora velit perferendis alias ipsam eveniet, sunt
-                  repellendus a. Quasi, quidem voluptates?
+                  What really drives me every day is the pursuit of knowledge
+                  and not just in the field of software but I love Astronomy,
+                  Astrophysics, Math and the whole STEM field. I love reading
+                  and learning about new tech. I like doing more than talking. I
+                  never “box” myself into any title or position. I have a
+                  “whatever it takes” attitude when it comes to solving
+                  technical challenges.
                 </p>
               </div>
             </div>
@@ -95,10 +114,11 @@ class Landingpage extends Component {
               <div className="frustrations">
                 <div className="secs">FRUSTRATIONS</div>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Itaque autem maiores inventore laboriosam veniam cumque
-                  asperiores fugit rem labore, reprehenderit nulla iusto facere
-                  minima tenetur dolorem pariatur aperiam aliquam doloremque!
+                  Not enough time during the day to read my ever growing list of
+                  Medium bookmarks. Having to sleep really takes time from
+                  learning. Not enough “Dinero” to buy more books :( . Also not
+                  having SKETCH for Linux or Windows, I guess for now AdobeXD on
+                  windows will have to do.
                 </p>
               </div>
 
@@ -135,7 +155,7 @@ class Landingpage extends Component {
 
                     <div className="overlay">
                       <Link to="/memo">
-                        <div className="text">Learn more</div>  
+                        <div className="text">Learn more</div>
                       </Link>
                     </div>
                   </div>
