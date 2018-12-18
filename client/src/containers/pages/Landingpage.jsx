@@ -38,7 +38,7 @@ class Landingpage extends Component {
               <div className="background">
                 <div className="secs">BACKGROUND</div>
                 <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Lorem ipsum dolor, sit aconsectetur adipisicing elit.
                   Aperiam dolores obcaecati alias iste amet ipsa quod dolorem
                   ratione reprehenderit? Facilis incidunt minus voluptas aliquid
                   distinctio accusamus voluptatibus, beatae maxime porro!
