@@ -135,7 +135,7 @@ class Landingpage extends Component {
 
                     <div className="overlay">
                       <Link to="/memo">
-                        <div className="text">Learn more</div>
+                        <div className="text">Learn more</div>  
                       </Link>
                     </div>
                   </div>
