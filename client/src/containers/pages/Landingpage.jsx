@@ -21,10 +21,29 @@ class Landingpage extends Component {
             <Link to="/">
               <img className="mario_logo" src={marioLogo} alt="mario logo 1" />
             </Link>
+            <a
+              href="https://github.com/mariogmazza"
+              target="_blank"
+              rel="noopener"
+            >
+              <img className="link_img" src={github} alt="github link" />
+            </a>
 
-            <img className="link_img" src={github} alt="github link" />
-            <img className="link_img" src={linkedin} alt="linkedin link" />
+            <a
+              href="https://www.linkedin.com/in/mario-mazza/"
+              rel="noopener"
+              target="_blank"
+            >
+              {" "}
+              <img
+                className="link_img"
+                src={linkedin}
+                alt="linkedin link"
+              />{" "}
+            </a>
+            <a href="mailto:mariomazza01@gmail.com?Subject=Hello%20again" target="_top">
             <img className="link_img" src={emailLogo} alt="email img" />
+            </a>
           </div>
 
           <div className="content">
@@ -38,9 +57,9 @@ class Landingpage extends Component {
               <div className="background">
                 <div className="secs">BACKGROUND</div>
                 <p>
-                  Lorem ipsum dolor, sit aconsectetur adipisicing elit.
-                  Aperiam dolores obcaecati alias iste amet ipsa quod dolorem
-                  ratione reprehenderit? Facilis incidunt minus voluptas aliquid
+                  Lorem ipsum dolor, sit aconsectetur adipisicing elit. Aperiam
+                  dolores obcaecati alias iste amet ipsa quod dolorem ratione
+                  reprehenderit? Facilis incidunt minus voluptas aliquid
                   distinctio accusamus voluptatibus, beatae maxime porro!
                 </p>
                 <p>
@@ -134,7 +153,7 @@ class Landingpage extends Component {
               </div>
 
               <div className="skills">
-                <div className="secs">SKILS</div>
+                <div className="secs">SKILLS</div>
 
                 <div className="row">
                   <div className="column">
