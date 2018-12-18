@@ -23,5 +23,13 @@
   "bugs": {
     "url": "https://github.com/mariogmazza/wb_portfolio/issues"
   },
-  "homepage": "https://github.com/mariogmazza/wb_portfolio#readme"
+  "engines": {
+    "node": "9.9.0"
+  },
+  "headers": {
+    "/**": {
+      "Access-Control-Allow-Origin": "*"
+    }
+  }
+ 
 }
