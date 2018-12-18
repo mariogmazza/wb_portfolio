@@ -1,0 +1,159 @@
+.main_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+
+    font-family: 'Cabin', sans-serif;
+    background-color: #2a2a2a;
+    border: 6px solid #4E7DFB;
+
+}
+
+.card_logo{
+    grid-column: 2 / 3;
+    justify-self: center;
+    text-align: center;
+    color: #cacaca;
+    padding: 15px;
+
+}
+
+.mario_logo_card{
+    min-width: 5vw;
+}
+
+.title_card {
+    grid-column: 2 / 3
+}
+
+.title_card>h1 {
+    color: #cacaca;
+    font-size: 2.625em;
+    line-height: 1.45em;
+    font-weight: 700;
+    letter-spacing: -2px;
+    margin-bottom: .1em;
+    /* text-transform: lowercase; */
+    width: 100%;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, .15);
+}
+
+.title_card>h2 {
+    font-size: 1.15em;
+    color: #8a8a8a;
+    font-family: Lato, Helvetica, Arial, sans-serif;
+    line-height: 1.7em;
+    word-spacing: .02em;
+    font-weight: 400;
+}
+
+
+
+
+.image_container {
+    grid-column: 2 / 3;
+
+}
+
+
+
+
+.visit_btn {
+
+    user-select: none;
+    color: #ebf1f8;
+    background-color: #4E7DFB;
+    cursor: pointer;
+    width: 20vw;
+    height: 5vh;
+    font-weight: 600;
+    font-family: inherit;
+    font-size: 1em;
+    text-rendering: auto;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    margin-bottom: 15px;
+}
+
+
+.visit_btn>i{
+    font-size: 25px;
+    padding-right: 10px;
+}
+
+.about_project {
+    grid-column: 2 / 3;
+}
+
+.about_project>h2 {
+    font-size: 2em;
+    color: #cacaca;
+}
+
+.about_project>p {
+    color: #cacaca;
+    font-size: 1.3em;
+    line-height: 1.65em;
+}
+
+
+
+
+.technical_sheet {
+    grid-column: 2 / 3;
+}
+
+.technical_sheet>h2 {
+    color: #cacaca;
+    font-size: 2em;
+
+}
+
+.technical_sheet>ul{
+    list-style: circle;
+}
+
+.technical_sheet>ul>li {
+    color: #cacaca;
+    font-size: 1.3em;
+    line-height: 1.65em;
+}
+
+
+
+.img_carousel {
+    width: 60vw;
+
+}
+
+
+hr {
+    display: block;
+    height: 1px;
+    width: 50%;
+    background-color: #484848;
+    position: relative;
+    border: 0;
+    margin: .5em 0 1em;
+}
+
+
+
+
+@media screen and (max-width: 650px){
+
+.main_container {
+    grid-template-columns: 10px 1fr 10px;
+}
+
+.visit_btn {
+    width:100%;
+}
+
+.img_carousel {
+    width: 80vw;
+    min-height: 30vh;
+}
+
+}

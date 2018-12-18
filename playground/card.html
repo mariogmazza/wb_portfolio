@@ -5,17 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+
+    <title>Project info</title>
     <style>
         .main_container {
-            font-family: 'Cabin', sans-serif;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto;
 
+            font-family: 'Cabin', sans-serif;
             background-color: #2a2a2a;
             border: 6px solid #4E7DFB;
 
         }
 
-        .title>h1 {
+        .title_card {
+            grid-column: 2 / 3
+        }
+
+        .title_card>h1 {
             color: #cacaca;
             font-size: 2.625em;
             line-height: 1.45em;
@@ -27,7 +37,7 @@
             text-shadow: 2px 2px 0 rgba(0, 0, 0, .15);
         }
 
-        .title>h2 {
+        .title_card>h2 {
             font-size: 1.15em;
             color: #8a8a8a;
             font-family: Lato, Helvetica, Arial, sans-serif;
@@ -38,11 +48,104 @@
 
 
 
+
+        .image_container {
+            grid-column: 2 / 3;
+
+        }
+
+
+
+
         .visit_btn {
-            background: #009688;
+
+            user-select: none;
             color: #ebf1f8;
-            width: 60px;
-            height: 20px;
+            /* background: #009688; */
+            background-color: #4E7DFB;
+            cursor: pointer;
+            width: 20vw;
+            height: 5vh;
+            font-weight: 600;
+            font-family: inherit;
+            text-rendering: auto;
+            text-decoration: none;
+            text-align: center;
+            border: none;
+            padding: 10px;
+            margin-bottom: 15px;
+        }
+
+
+        .about_project {
+            grid-column: 2 / 3;
+        }
+
+        .about_project>h2 {
+            font-size: 2em;
+            color: #cacaca;
+        }
+
+        .about_project>p {
+            color: #cacaca;
+            font-size: 1.3em;
+            line-height: 1.65em;
+        }
+
+
+
+
+        .technical_sheet {
+            grid-column: 2 / 3;
+        }
+
+        .technical_sheet>h2 {
+            color: #cacaca;
+            font-size: 2em;
+
+        }
+
+        .technical_sheet>ul{
+            list-style: circle;
+        }
+
+        .technical_sheet>ul>li {
+            color: #cacaca;
+            font-size: 1.3em;
+            line-height: 1.65em;
+        }
+
+
+
+        .img_carousel {
+            width: 60vw;
+
+        }
+
+
+        hr {
+            display: block;
+            height: 1px;
+            width: 50%;
+            background-color: #484848;
+            position: relative;
+            border: 0;
+            margin: .5em 0 1em;
+        }
+
+
+
+
+        @media screen and (max-width: 650px){
+
+        .main_container {
+            grid-template-columns: 10px 1fr 10px;
+        }
+
+        .visit_btn {
+            width:100%;
+        }
+
         }
     </style>
 </head>
@@ -50,30 +153,55 @@
 <body>
     <div class="main_container">
 
-        <div class="title">
+        <div class="title_card">
             <h1>X MOVIE</h1>
             <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad laborum libero corporis dolorem amet harum,
                 odio </h2>
         </div>
+
+
+
         <div class="image_container">
-            <button class="visit_btn">visit the website</button>
-            <img src="./blur-close-up-code-546819.jpg" alt="" class="img_display">
+
+            <button class="visit_btn">
+                    <i class="fa fa-external-link" aria-hidden="true"></i>
+
+                visit the website</button>
+            <img class="img_carousel" src="./blur-close-up-code-546819.jpg" alt="carousel"  />
         </div>
+
+
 
         <div class="about_project">
-            <div class="secs">About this project</div>
+
+            <h2>About this project</h2>
+            <hr>
+
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo praesentium neque earum. Ipsam,
                 nam
                 alias consequuntur praesentium mollitia ullam animi aliquid, autem dolorum nemo iusto assumenda
                 aliquam voluptates ut accusantium.</p>
+
+
         </div>
 
+
+
         <div class="technical_sheet">
-            <div class="secs">Technical Sheet </div>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo praesentium neque earum. Ipsam,
-                nam
-                alias consequuntur praesentium mollitia ullam animi aliquid, autem dolorum nemo iusto assumenda
-                aliquam voluptates ut accusantium.</p>
+            <h2>Technical Sheet </h2>
+            <hr>
+            <ul>
+                <li>Reactsj</li>
+                <li>Reactsj</li>
+                <li>Reactsj</li>
+                <li>Reactsj</li>
+                <li>Reactsj</li>
+                <li>Reactsj</li>
+                <li>Reactsj</li>
+                <li>Reactsj</li>
+                <li>Reactsj</li>
+
+            </ul>
         </div>
 
     </div>

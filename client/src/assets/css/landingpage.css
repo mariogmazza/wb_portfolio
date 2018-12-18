@@ -1,0 +1,317 @@
+.main_layout {
+    min-height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "side con con con con con"
+        "side con con con con con"
+    ;
+    font-family: 'Cabin', sans-serif;
+
+    background-color: #2a2a2a;
+    border: 6px solid #4E7DFB;
+}
+
+.navbar {
+    grid-area: nav;
+    align-self: center;
+    justify-self: center
+}
+
+.link_img {
+    width: 12vw;
+    height: 12vh;
+    padding: 15px;
+}
+
+.link_img:hover {
+    height: 13vh;
+}
+
+
+
+.mario_logo {
+    height: 40px;
+    padding: 10px;
+}
+
+.mario_logo2 {
+    display: none;
+    grid-area: logo;
+}
+
+
+.side_menu {
+    grid-area: side;
+
+    /* background-image: url("./background_gray.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; */
+    text-align: center;
+    display: grid;
+    margin: 10px;
+}
+
+.content {
+    grid-area: con;
+
+    display: grid;
+    grid-template-areas:
+        "t . . . . ."
+        "c1 c1 c1 c2 c2 c2"
+    ;
+    color: #FFF;
+
+}
+
+.title {
+    grid-area: t;
+    padding-bottom: 35px;
+}
+
+.title>div {
+    color: #c2c2c2;
+}
+
+
+.colm1 {
+    grid-area: c1;
+}
+
+
+
+
+
+
+.secs {
+    font-size: 2vw;
+    border-bottom: 2px solid rgb(85, 85, 85);
+    padding-bottom: 4px;
+}
+
+
+.colm2 {
+    grid-area: c2;
+}
+
+.background {
+    width: 80%;
+    height: minmax(200px, 50vh);
+}
+
+.goals {
+    width: 80%;
+    height: minmax(200px, 50vh);
+}
+
+.motivation {
+    width: 80%;
+    height: minmax(200px, 50vh);
+}
+
+.frustrations {
+    width: 80%;
+    height: minmax(200px, 50vh);
+}
+
+.projects {
+    width: 80%;
+    height: minmax(200px, 50vh);
+}
+
+.skills {
+    width: 80%;
+    height: minmax(200px, 50vh);
+}
+
+
+
+
+
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+.column {
+    float: left;
+    width: 25%;
+    padding: 0 10px;
+    font-size: 1vw;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+    margin: 0 -5px;
+    padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+
+/* Style the counter cards */
+.card_skills {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #f1f1f148;
+}
+
+.img__cont {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    grid-auto-rows: 150px;
+    grid-auto-flow: dense;
+    padding: 10px;
+
+}
+
+
+.pic_cont {
+    position: relative;
+    width: 100%;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #4E7DFB;
+}
+
+.pic_cont:hover .overlay {
+    opacity: 0.8;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    position: absolute;
+    transform: translate(-50%, -50%);
+
+
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+    .card_skills {
+        margin: 10px;
+    }
+
+    .column {
+        width: 50%;
+    }
+
+}
+
+
+
+@media screen and (max-width: 650px) {
+    .column {
+        width: 50%;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .main_layout {
+
+        grid-template-areas:
+            "con con con con con con"
+            "side side side side side side"
+        ;
+    }
+
+
+    .content {
+        grid-area: con;
+
+        display: grid;
+        grid-template-areas:
+            "logo . t t . ."
+            "c1 c1 c1 c1 c1 c1"
+            "c2 c2 c2 c2 c2 c2"
+
+        ;
+        color: white;
+
+    }
+
+    .side_menu {
+        display: block;
+    }
+
+    .link_img {
+        padding: 5px;
+    }
+
+    .mario_logo2 {
+        display: block;
+        height: 51px;
+        padding: 10px;
+    }
+
+    .mario_logo {
+        display: none;
+    }
+
+    .secs {
+        font-size: 6vw;
+        padding: 10px;
+    }
+
+    .skills-text {
+        font-size: 5vw;
+    }
+
+    .background {
+        width: 100%;
+    }
+
+    .goals {
+        width: 100%;
+    }
+
+    .motivation {
+        width: 100%;
+    }
+
+    .frustrations {
+        width: 100%;
+    }
+
+    .projects {
+        width: 100%;
+    }
+
+    .skills {
+        width: 100%;
+    }
+
+
+}

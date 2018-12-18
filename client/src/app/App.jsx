@@ -1,12 +1,23 @@
 import React, { Component } from 'react';
-import './App.css';
+import { Route, Switch } from 'react-router-dom'
+
+import Landingpage from '../containers/pages/Landingpage'
+import MemoSection from '../components/MemoSection'
+import XMovie from '../components/XmovieSection'
+import WeatherApp from '../components/WeatherSection'
+import NprScraper from '../components/NprSection'
+
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <h1>hi</h1>
-      </div>
+      <Switch>
+          <Route exact path='/' component={Landingpage} />
+          <Route exact path='/memo' component={MemoSection} />
+          <Route exact path='/xmovie' component={XMovie} />
+          <Route exact path='/weatherapp' component={WeatherApp} />
+          <Route exact path='/npmscraper' component={NprScraper} />
+      </Switch>
     );
   }
 }
