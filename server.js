@@ -1,14 +1,10 @@
-require('dotenv').config();
 
 const express = require('express');
 const path = require('path');
 const bodyParser = require('body-parser');
 const cors = require('cors')
 
-// const handle = require('./handlers');
-// const routes = require('./routes');
 
-const app = express();
 const port = process.env.PORT || 5000;
 
 app.use(cors());
@@ -17,12 +13,6 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 
-// app.get('/',(req, res)=>{
-//   res.send("I'm working") 
-// })
-
-
-// app.use('/api/getweather', routes.getWeatherRoute);
 
 
 if (process.env.NODE_ENV === 'production') {

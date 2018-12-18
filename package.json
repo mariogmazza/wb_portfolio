@@ -12,15 +12,15 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server",
+    "heroku-postbuild": "cd client/ && npm install && npm install --only=dev --no-shrinkwrap && npm run build"
   },
   "engines": {
     "node": "9.9.0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mariogmazza/wb_porfolio.git"
+    "url": "git+https://github.com/mariogmazza/wb_portfolio.git"
   },
   "author": "Mario Mazza",
   "license": "ISC",
