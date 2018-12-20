@@ -76,7 +76,7 @@ class Landingpage extends Component {
                   months later I took the scariest and most exciting step in my
                   career and quit my stable and well paid job to boost my
                   chances to finally work on the wonderful field of software development 
-                  and took an immersive full-time Coding Bootcamp and I
+                  and signed up for an immersive full-time Coding Bootcamp and I
                   graduated as a FULL-STACK DEVELOPER. I learned many
                   technologies but most important of all I learned how to learn
                   on my own.
