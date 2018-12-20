@@ -10,13 +10,16 @@ function XmovieSection() {
       <div className="title_card">
         <h1>XMovie</h1>
         <h2>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad laborum
-          libero corporis dolorem amet harum, odio{" "}
+          Struggling when choosing a movie? Want to manage the movies you watch?{" "}
         </h2>
       </div>
 
       <div className="image_container">
-        <a href="https://xmovieapp.herokuapp.com/">
+        <a
+          href="https://xmovieapp.herokuapp.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <button className="visit_btn">
             <i className="fa fa-external-link" aria-hidden="true" />
             visit the website
@@ -31,10 +34,12 @@ function XmovieSection() {
         <hr />
 
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo
-          praesentium neque earum. Ipsam, nam alias consequuntur praesentium
-          mollitia ullam animi aliquid, autem dolorum nemo iusto assumenda
-          aliquam voluptates ut accusantium.
+          This project came from my personal love for the art of movies and my
+          inability to make a fast decision to watch or re-watch a movie with
+          the endless choices we have from streaming service providers. It
+          started as simple UI to present a random movie on the click on button
+          but soon after I realized I could use it to also save and manage
+          movies the title that I’d like to watch in the future.
         </p>
       </div>
 
@@ -42,15 +47,15 @@ function XmovieSection() {
         <h2>Technical Sheet </h2>
         <hr />
         <ul>
-          <li>Reactsj</li>
-          <li>Reactsj</li>
-          <li>Reactsj</li>
-          <li>Reactsj</li>
-          <li>Reactsj</li>
-          <li>Reactsj</li>
-          <li>Reactsj</li>
-          <li>Reactsj</li>
-          <li>Reactsj</li>
+          <li>UI/UX Design</li>
+          <li>React.js</li>
+          <li>Redux</li>
+          <li>Styled-components</li>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>MongoDB</li>
+          <li>Node.js</li>
+          <li>Express</li>
         </ul>
       </div>
 

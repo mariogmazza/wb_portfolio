@@ -1,32 +1,29 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-import marioLogo from '../assets/img/mgm_logo.svg'
-import nprScraper from '../assets/img/NPR_Scraper.gif'
+import marioLogo from "../assets/img/mgm_logo.svg";
+import nprScraper from "../assets/img/NPR_Scraper.gif";
 
 function NprSection() {
   return (
     <div className="main_container">
       <div className="title_card">
         <h1>NPR Scraper</h1>
-        <h2>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad laborum
-          libero corporis dolorem amet harum, odio{" "}
-        </h2>
+        <h2>News Scraper with Mongo DB and Cheerios </h2>
       </div>
 
       <div className="image_container">
-      <a href='https://npr-scraper2017.herokuapp.com/'>
-        <button className="visit_btn">
-          <i className="fa fa-external-link" aria-hidden="true" />
-          visit the website
-        </button>
+        <a
+          href="https://npr-scraper2017.herokuapp.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="visit_btn">
+            <i className="fa fa-external-link" aria-hidden="true" />
+            visit the website
+          </button>
         </a>
-        <img
-          className="img_carousel"
-          src={nprScraper}
-          alt="carousel"
-        />
+        <img className="img_carousel" src={nprScraper} alt="carousel" />
       </div>
 
       <div className="about_project">
@@ -34,10 +31,8 @@ function NprSection() {
         <hr />
 
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo
-          praesentium neque earum. Ipsam, nam alias consequuntur praesentium
-          mollitia ullam animi aliquid, autem dolorum nemo iusto assumenda
-          aliquam voluptates ut accusantium.
+          A CRUD application that scrapes articles from other website allowing
+          the user to save, comment and delete the same.
         </p>
       </div>
 
@@ -45,15 +40,13 @@ function NprSection() {
         <h2>Technical Sheet </h2>
         <hr />
         <ul>
-          <li>Reactsj</li>
-          <li>Reactsj</li>
-          <li>Reactsj</li>
-          <li>Reactsj</li>
-          <li>Reactsj</li>
-          <li>Reactsj</li>
-          <li>Reactsj</li>
-          <li>Reactsj</li>
-          <li>Reactsj</li>
+          <li>Cheerio</li>
+          <li>MongoDB</li>
+          <li>Node.js</li>
+          <li>HandleBars</li>
+          <li>Express</li>
+          <li>HTML5</li>
+          <li>CSS3</li>
         </ul>
       </div>
 
